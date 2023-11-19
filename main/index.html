@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Company</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <!-- Your logo goes here -->
+        <img src="your-logo.png" alt="Your Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <video src="FINAL.mp4" autoplay loop muted></video>
+      <div class="left-content">
+        <p class="h1">We Connecting <br>Business and <br>Solutions</p>
+        <p class="h2">Our Software Development company enhances customer service <br>by speeding up time to value. Utilizing the latest technology can <br>boost operational efficiency.</p>
+        <button class="b1">Schedule a Call</button>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us-section">
+        <div class="about-us-content">
+          <p class="about-us-topic" id="about">About Riyadvi</p>
+          <p id="h3">
+            Founded in 2021, Riyadvi Software Technologies Pvt.Ltd is located in Chennai City of India. Specifically, we are a bunch of folks who believe in the idea of evocative storytelling. Our team uses the visual medium to create lasting impressions. With no detail too small and no challenge too big, we truly believe in the marriage of production and design. Riyadvi specializes in App Development, Web Development, Game Development, VR/AR, Mixed Reality, 3D-Development, Digital Marketing, and Business Intelligence. Quality and Innovation are at the heart of what we do. We look forward to working with you and proving our skills to the client’s satisfaction.
+          </p>
+        </div>
+        <div class="about-us-content">
+          <img src="about.png" alt="Your Image" id="aboutimg">
+        </div>
+      </section>
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Software Development Services</h2>
+    <hr>
+    <div class="service-grid">
+      <div class="service-item">
+        <h3>Web Development</h3>
+        <p>We build web sites that serve as the digital hub and the face of your business on the Web, so it is important that they reflect your brand well.</p>
+      </div>
+      <div class="service-item">
+        <h3>App Development</h3>
+        <p>It’s our goal to build apps that delight people around the world. With people increasingly relying on them, we are more focused than ever on delivering great experiences.</p>
+      </div>
+      <div class="service-item">
+        <h3>Cyber Security Testing</h3>
+        <p>Cyber security testing uses multiple methodologies and tactics to measure how effective your cyber security strategy is against a potential attack.</p>
+      </div>
+      <div class="service-item">
+        <h3>3D Development</h3>
+        <p>Having a 3D model for your business is always an added benefit. We do interiors and exteriors design, our 3D models have quality dimensions, reinforcing zero defects.</p>
+      </div>
+      <div class="service-item">
+        <h3>Virtual and Augmented Reality</h3>
+        <p>We provide virtual and augmented reality services to click a 360° photograph of a car and display the interior and exterior of the vehicle in interactive imagery.</p>
+      </div>
+      <div class="service-item">
+        <h3>Digital Marketing</h3>
+        <p>In addition to search, content, and social media, digital marketing is a core business, and we provide services from SEO to content marketing, Social media advertising.</p>
+      </div>
+      <div class="service-item">
+        <h3>Game Development</h3>
+        <p>With its ability to support high-quality graphics and robust structure, the Desktop Game is the oldest-standing enterprise in the entire gaming industry.</p>
+      </div>
+      <div class="service-item">
+        <h3>Mixed Reality</h3>
+        <p>Mixed Reality is a term referred to the merging of real and virtual worlds to produce a new environment where physical and digital objects co-exist and interact in real-time.</p>
+      </div>
+      <div class="service-item">
+        <h3>Business Intelligence</h3>
+        <p>We build web sites that serve as the digital hub and the face of your business on the Web, so it is important that they reflect your brand well.</p>
+      </div>
+    </div>
+  </section>
+   <!-- Blog Section -->
+   <section id="blog">
+    <h2>Trending Blogs</h2>
+    <hr>
+    <div class="blog-grid">
+      <div class="blog-item">
+        <img src="logo1.png" alt="Blog 1">
+        <p id="tag">Growing Your Financial Performance</p>
+      </div>
+      <div class="blog-item">
+        <img src="logo2.jpeg" alt="Blog 2">
+        <p id="tag">Building Lasting Connections</p>
+      </div>
+      <div class="blog-item">
+        <img src="logo3.png" alt="Blog 3">
+        <p id="tag">Expanding Your Horizons</p>
+      </div>
+    </div>
+  </section>
+   <!-- Contact Us Section -->
+   <section id="contact">
+    <h2>Have a Question, Contact us!</h2>
+    <hr>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <h3>Address</h3>
+        <p>126, 213, Ramakrishna Mutt Road,<br>Alamelu Manga Puram, Sankarapuram, Mylapore, Chennai-600004.</p>
+      </div>
+      <div class="contact-item">
+        <h3>Email</h3>
+        <p>info@riyadvisoftwaretechnologies.com</p>
+      </div>
+      <div class="contact-item">
+        <h3>Phone</h3>
+        <p>(+91) 90808 22034</p>
+      </div>
+    </div>
+    <div class="contact-form">
+        <input type="text" id="username" placeholder="Your Username">
+        <p id="usernameError" class="error"></p>
+        
+        <input type="email" id="email" placeholder="Your Email Address">
+        <p id="emailError" class="error"></p>
+        
+        <input type="tel" id="phoneNumber" placeholder="Your Phone Number">
+        <p id="phoneNumberError" class="error"></p>
+        
+        <input type="text" id="bestTime" placeholder="Best Time to Contact">
+        <textarea id="message" placeholder="Your Message" rows="4"></textarea>
+        <button onclick="validateForm()">Submit</button>
+      </div>        
+  </section>
+  </main>
+<script src="script.js"></script>
+  <footer>
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>
